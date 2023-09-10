@@ -1,54 +1,45 @@
-:root {
-    --blanco: #ffffff;
-    --oscuro: #212121;
-    --primario: #FFC107;
-    --secundario: #0097A7;
-    --gris: #757575;
-    --grisClaro: #DFE9F3;
-}
-
-
-/* Establece un alto y ancho para el contenedor, por ejemplo: */
-.container {
-    width: 100%;
-    height: 100vh; /* Esto hace que el contenedor ocupe toda la altura de la ventana gráfica. */
-    display: flex;
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
-}
-
-/* Ajusta el estilo del iframe según tus necesidades */
-iframe {
-    width: 80%; /* Ancho del iframe */
-    height: 500px; /* Alto del iframe */
-    border: none; /* Quita el borde si lo deseas */
-}
-
-
-
-/*  Globales **/
 html {
-    font-size: 62.5%;
-    box-sizing: border-box; /* Hack para Box Model **/
+    font-size: 70.5%;
+    box-sizing: border-box; 
     scroll-snap-type: y mandatory;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
-    font-size: 16px; /* 1rem = 10px */
-    font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top,#232121 0%, #000000 100% );
+    font-size: 15px; 
+    background-image: linear-gradient(to top,#252424 0%, #000000 100% );
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #DFE9F3;
 }
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
 }
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+iframe {
+    width: 80%; 
+    height: 500px; 
+    border:double;
+    border-color: aqua;
+    border-radius: 10px;
+}
+
 .boton {
-    background-color: var(--secundario);
-    color: var(--blanco);
+    background-color:#00ddff;
+    color:#000000;
     padding: 1rem 3rem;
     margin-top: 3rem;
     font-size: 2rem;
@@ -60,23 +51,18 @@ body {
     text-align: center;
     border: none;
 }
+
 @media (min-width: 768px) {
     .boton {
         width: auto;
     }
 }
+
 .boton:hover {
     cursor: pointer;
 }
 
-.sombra {
-    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
-    background-color: var(--blanco);
-    padding: 2rem;
-    border-radius: 1rem;
-}
 
-/* Tipografia */
 h1 {
     font-size: 3.8rem;
 }
@@ -86,35 +72,17 @@ h2 {
 h3 {
     font-size: 1.8rem;
 }
+
 h1,h2,h3 {
     text-align: center;
 }
 
-
-/* Titulos */
 .titulo {
     font-size: 3rem;
     text-transform: uppercase;
     color: #ffffff;
 }
 
-/** Utilidades **/
-.w-sm-100 {
-    width: 100%;
-}
-@media (min-width: 768px) {
-    .w-sm-100 {
-        width: auto;
-    }
-}
-.flex {
-    display: flex;
-}
-.alinear-derecha {
-    justify-content: flex-end;
-}
-
-/* Navegacion Principal */
 .nav-bg {
     background-color: #414141;
 }
@@ -132,18 +100,18 @@ h1,h2,h3 {
 .navegacion-principal a {
     display: block;
     text-align: center;
-    color: var(--blanco);
+    color:#000000;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
     padding: 1rem;
 }
+
 .navegacion-principal a:hover {
-    background-color: var(--primario);
-    color: var(--oscuro);
+    background-color:#414141;
+    color: #ffffff;
 }
 
-/* Hero */
 .hero {
     background-image: url(../a76180d2cb9f8116574f5091102742a9.jpg);
     background-repeat: no-repeat;
@@ -152,9 +120,10 @@ h1,h2,h3 {
     position: relative;
     margin-bottom: 2rem;
 }
+
 .contenido-hero {
     position: absolute;
-    background-color: rgba( 0,0,0, .7 ); /** Anterior **/
+    background-color: rgba( 0,0,0, .7 ); 
     background-color: rgb( 0 0 0 / 70% );
     width: 100%;
     height: 100%;
@@ -176,12 +145,11 @@ h1,h2,h3 {
 }
 
 
-/** Contacto **/
 .formulario {
     background-image: url(fa2b7f23dcd6eddea008b6a5a01cbfe0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
+    width: min( 60rem, 100% );
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -230,9 +198,4 @@ h1,h2,h3 {
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
-}
-
-/** Footer **/
-.footer {
-    text-align: center;
 }
