@@ -1,13 +1,21 @@
+/*Hojas De Estilos en cascada */
+/*Aqui se encuentra todo los estilos de mi pagian index.html*/
+/*Esta hoja de estilos de css la elaboro angel alejandro galaviz rivera , pero si gustas la puedes usar para tu proyecto*/
+
+/*Estas propiedas se aplican a todo documento html*/
 html {
     font-size: 70.5%;
     box-sizing: border-box; 
     scroll-snap-type: y mandatory;
 }
 
+/*Selector Univeral*/
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
+/*Solo se aplica al body de mi documento*/
 body {
     font-size: 18px; 
     background-image: linear-gradient(to top,#252424 0%, #000000 100% );
@@ -15,12 +23,13 @@ body {
     color: #DFE9F3;
 }
 
+/*Este es mi contenedor de css para darle un estilo a mi documento*/
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
 }
 
-
+/*Esto para el iframe de api de youtube*/
 .container {
     width: 100%;
     height: 100vh;
@@ -37,6 +46,7 @@ iframe {
     border-radius: 10px;
 }
 
+/*Solo aplica estilos al botton*/
 .boton {
     background-color:#00ddff;
     color:#ffffff;
@@ -52,18 +62,20 @@ iframe {
     border: none;
 }
 
+/*Es un media query para adaptar a la resolucion de pantallas*/
 @media (min-width: 768px) {
     .boton {
         width: auto;
     }
 }
 
+/*Es cuando pasas el cursor sobre el boton para que cambien el color*/
 .boton:hover {
     cursor: pointer;
     color: #000000;
 }
 
-
+/*Etiquetas generales*/
 h1 {
     font-size: 3.8rem;
 }
@@ -78,6 +90,7 @@ h1,h2,h3 {
     text-align: center;
 }
 
+/*Clases*/
 .titulo {
     font-size: 3rem;
     text-transform: uppercase;
@@ -91,6 +104,8 @@ h1,h2,h3 {
     display: flex;
     flex-direction: column;
 }
+
+/*Otro media query*/
 @media (min-width: 768px) {
     .navegacion-principal {
         flex-direction: row;
@@ -145,7 +160,7 @@ h1,h2,h3 {
     align-items: flex-end;
 }
 
-
+/*Esto es para el formulario de la parte del footer de mi documento*/
 .formulario {
     background-image: url(fa2b7f23dcd6eddea008b6a5a01cbfe0.jpg);
     background-repeat: no-repeat;
